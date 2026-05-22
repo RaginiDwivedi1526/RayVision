@@ -1,0 +1,348 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-navy: #1A2B5F;
+  --color-navy-light: #243470;
+  --color-navy-dark: #111D42;
+  --color-blue-primary: #1565C0;
+  --color-blue-secondary: #2196F3;
+  --color-blue-light: #42A5F5;
+  --color-blue-50: #E3F2FD;
+  --color-green-primary: #2E7D32;
+  --color-green-secondary: #43A047;
+  --color-green-light: #66BB6A;
+  --color-green-50: #E8F5E9;
+  --color-orange: #F57C00;
+  --color-orange-light: #FF9800;
+  --color-orange-gold: #FFB300;
+  --color-orange-50: #FFF3E0;
+
+  /* Grays */
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  /* Layout Fixes for Tailwind v4 */
+  --container-7xl: 80rem;
+  --max-width-7xl: 80rem;
+  --container-6xl: 72rem;
+  --max-width-6xl: 72rem;
+  --container-5xl: 64rem;
+  --max-width-5xl: 64rem;
+  --container-4xl: 56rem;
+  --max-width-4xl: 56rem;
+  --container-md: 28rem;
+  --max-width-md: 28rem;
+  --container-lg: 32rem;
+  --max-width-lg: 32rem;
+  --container-xl: 36rem;
+  --max-width-xl: 36rem;
+  --container-2xl: 42rem;
+  --max-width-2xl: 42rem;
+}
+
+/* =============================================
+   BASE STYLES
+   ============================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-gray-900);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* =============================================
+   LAYOUT FIX — Explicit container widths
+   ============================================= */
+.container-main {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* =============================================
+   SECTION STYLES
+   ============================================= */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.section-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-green-primary);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-green-primary);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.section-title-center {
+  text-align: center;
+}
+
+.section-title-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =============================================
+   CARD STYLES
+   ============================================= */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =============================================
+   BUTTON STYLES
+   ============================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--color-blue-primary);
+  color: white;
+  border-color: var(--color-blue-primary);
+}
+
+.btn-primary:hover {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.35);
+}
+
+.btn-green {
+  background: var(--color-green-primary);
+  color: white;
+  border-color: var(--color-green-primary);
+}
+
+.btn-green:hover {
+  background: #388E3C;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--color-navy);
+  transform: translateY(-2px);
+}
+
+.btn-outline-blue {
+  background: transparent;
+  color: var(--color-blue-primary);
+  border-color: var(--color-blue-primary);
+}
+
+.btn-outline-blue:hover {
+  background: var(--color-blue-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+.btn-outline-dark:hover {
+  background: var(--color-navy);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* =============================================
+   FORM STYLES
+   ============================================= */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-gray-200);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-gray-900);
+  background: white;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--color-blue-primary);
+  box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.15);
+}
+
+.form-input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  margin-bottom: 0.375rem;
+  font-family: var(--font-body);
+}
+
+.form-label .required {
+  color: #E53935;
+  margin-left: 2px;
+}
+
+/* =============================================
+   SCROLLBAR
+   ============================================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy);
+}
+
+/* =============================================
+   SCROLL TO TOP BUTTON
+   ============================================= */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-blue-primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.4);
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: var(--color-navy);
+  transform: translateY(-3px);
+}
