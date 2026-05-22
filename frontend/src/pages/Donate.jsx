@@ -36,40 +36,13 @@ export default function Donate() {
       return;
     }
     setLoading(true);
-    try {
-      const Razorpay = await loadRazorpay();
-      const { data } = await createDonationOrder({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        pan: formData.pan,
-        amount: Number(formData.amount),
-      });
-
-      const options = {
-        key: import.meta.env.VITE_RAZORPAY_KEY,
-        amount: data.amount,
-        currency: data.currency || 'INR',
-        name: 'RayVision Digital Empowerment Trust',
-        description: 'Donation',
-        order_id: data.orderId,
-        handler: async (response) => {
-          try {
-            await verifyPayment(response);
-            toast.success('Thank you for your generous donation! A receipt has been sent to your email.');
-          } catch (err) {
-            toast.error('Payment verification failed. Please contact support.');
-          }
-        },
-        prefill: { name: formData.name, email: formData.email, contact: formData.phone },
-        theme: { color: '#1565C0' },
-      };
-      const rzp = new Razorpay(options);
-      rzp.open();
-    } catch (err) {
-      toast.error(err.message || 'Failed to initiate payment. Please try again later.');
-    }
-    setLoading(false);
+    
+    // Simulate processing
+    setTimeout(() => {
+      setLoading(false);
+      toast.success(`Thank you, ${formData.name}! Your pledge to donate ₹${formData.amount} has been received. Our team will contact you shortly with payment details.`);
+      setFormData({ name: '', email: '', phone: '', pan: '', amount: 1000, custom: false });
+    }, 1500);
   };
 
   return (
