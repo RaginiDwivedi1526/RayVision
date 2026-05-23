@@ -13,14 +13,14 @@ const metrics = [
 ];
 
 const photos = [
-  { src: 'https://picsum.photos/seed/imp1/400/300', label: 'Digital Literacy Camps' },
-  { src: 'https://picsum.photos/seed/imp2/400/300', label: 'Skill Development Training' },
-  { src: 'https://picsum.photos/seed/imp3/400/300', label: 'Women Digital Empowerment' },
-  { src: 'https://picsum.photos/seed/imp4/400/300', label: 'Cyber Safety Awareness' },
-  { src: 'https://picsum.photos/seed/imp5/400/300', label: 'Rural Digital Centers' },
-  { src: 'https://picsum.photos/seed/imp6/400/300', label: 'Students Empowered' },
-  { src: 'https://picsum.photos/seed/imp7/400/300', label: 'Community Engagement' },
-  { src: 'https://picsum.photos/seed/imp8/400/300', label: 'Digital Outreach Programs' },
+  { src: '/images/gallery/1.png', label: 'Digital Literacy Camps' },
+  { src: '/images/gallery/2.png', label: 'Skill Development Training' },
+  { src: '/images/gallery/3.png', label: 'Women Digital Empowerment' },
+  { src: '/images/gallery/4.png', label: 'Cyber Safety Awareness' },
+  { src: '/images/gallery/5.png', label: 'Rural Digital Centers' },
+  { src: '/images/gallery/6.png', label: 'Students Empowered' },
+  { src: '/images/gallery/7.png', label: 'Community Engagement' },
+  { src: '/images/gallery/8.png', label: 'Digital Outreach Programs' },
 ];
 
 const progress = [
@@ -31,9 +31,9 @@ const progress = [
 ];
 
 const stories = [
-  { name: 'Ramesh Kumar', img: 'https://picsum.photos/seed/face1/200/200', quote: 'After attending digital literacy classes, I started my online services center in my village and now earn a stable income.' },
-  { name: 'Meena Sharma', img: 'https://picsum.photos/seed/face2/200/200', quote: 'I learned digital marketing and now run my own handmade products business online.' },
-  { name: 'Arjun Patel', img: 'https://picsum.photos/seed/face3/200/200', quote: 'The computer training helped me get a job in a private company in the city.' },
+  { name: 'Ramesh Kumar', img: '/images/gallery/1.png', quote: 'After attending digital literacy classes, I started my online services center in my village and now earn a stable income.' },
+  { name: 'Meena Sharma', img: '/images/gallery/2.png', quote: 'I learned digital marketing and now run my own handmade products business online.' },
+  { name: 'Arjun Patel', img: '/images/gallery/3.png', quote: 'The computer training helped me get a job in a private company in the city.' },
 ];
 
 const goals = [

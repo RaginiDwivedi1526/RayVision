@@ -18,11 +18,11 @@ const heroCounters = [
 ];
 
 const programs = [
-  { icon: <Monitor size={26} />, title: 'Digital Literacy Programs', desc: 'Computer education, internet awareness & digital payments for all.', image: 'https://picsum.photos/seed/digilit/400/250' },
-  { icon: <ShieldCheck size={26} />, title: 'Cyber Safety Awareness', desc: 'Workshops on cybercrime prevention and internet safety.', image: 'https://picsum.photos/seed/cybersafe/400/250' },
-  { icon: <Briefcase size={26} />, title: 'Skill Development Initiatives', desc: 'Training in graphic design, AI tools, freelancing & more.', image: 'https://picsum.photos/seed/skilldev/400/250' },
-  { icon: <Users size={26} />, title: 'Women Digital Empowerment', desc: 'Digital education, financial literacy & online earning for women.', image: 'https://picsum.photos/seed/womemp/400/250' },
-  { icon: <Building2 size={26} />, title: 'Smart Village Projects', desc: 'Technology-enabled learning in rural regions.', image: 'https://picsum.photos/seed/smartvil/400/250' },
+  { icon: <Monitor size={26} />, title: 'Digital Literacy Programs', desc: 'Computer education, internet awareness & digital payments for all.', image: '/images/gallery/1.png' },
+  { icon: <ShieldCheck size={26} />, title: 'Cyber Safety Awareness', desc: 'Workshops on cybercrime prevention and internet safety.', image: '/images/gallery/2.png' },
+  { icon: <Briefcase size={26} />, title: 'Skill Development Initiatives', desc: 'Training in graphic design, AI tools, freelancing & more.', image: '/images/gallery/3.png' },
+  { icon: <Users size={26} />, title: 'Women Digital Empowerment', desc: 'Digital education, financial literacy & online earning for women.', image: '/images/gallery/4.png' },
+  { icon: <Building2 size={26} />, title: 'Smart Village Projects', desc: 'Technology-enabled learning in rural regions.', image: '/images/gallery/5.png' },
 ];
 
 const whyChoose = [
@@ -39,10 +39,10 @@ const testimonials = [
 ];
 
 const galleryImages = [
-  'https://picsum.photos/seed/gal1/400/300',
-  'https://picsum.photos/seed/gal2/400/300',
-  'https://picsum.photos/seed/gal3/400/300',
-  'https://picsum.photos/seed/gal4/400/300',
+  '/images/gallery/6.png',
+  '/images/gallery/7.png',
+  '/images/gallery/8.png',
+  '/images/gallery/1.png',
 ];
 
 const fadeInUp = {
@@ -58,7 +58,7 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://picsum.photos/seed/heromain/1600/900" alt="Digital classroom in rural India" className="w-full h-full object-cover" />
+          <img src="/images/gallery/2.png" alt="Digital classroom in rural India" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/85 to-navy/60" />
         </div>
         <div className="relative z-10 container-main section-padding">
@@ -105,7 +105,7 @@ export default function Home() {
               <Link to="/about" className="btn btn-outline-blue">Learn More About Us <ArrowRight size={18} /></Link>
             </motion.div>
             <motion.div {...fadeInUp} transition={{ duration: 0.6, delay: 0.2 }} className="relative">
-              <img src="https://picsum.photos/seed/office1/600/450" alt="RayVision rural digital center"
+              <img src="/images/gallery/3.png" alt="RayVision rural digital center"
                 className="rounded-2xl shadow-2xl w-full object-cover h-[400px]" />
               <div className="absolute -bottom-5 -left-5 md:-bottom-6 md:-left-6 bg-blue-primary text-white rounded-xl px-5 py-4 shadow-lg">
                 <div className="text-2xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>50+</div>
@@ -191,7 +191,7 @@ export default function Home() {
               <Link to="/impact" className="btn btn-green">See Our Impact <ArrowRight size={18} /></Link>
             </motion.div>
             <motion.div {...fadeInUp} transition={{ duration: 0.6, delay: 0.2 }}>
-              <img src="https://picsum.photos/seed/impact1/600/450" alt="Digital payments training"
+              <img src="/images/gallery/4.png" alt="Digital payments training"
                 className="rounded-2xl shadow-2xl w-full object-cover h-[420px]" />
             </motion.div>
           </div>

@@ -13,24 +13,24 @@ const categories = [
 ];
 
 const allPhotos = [
-  { src: '/images/gallery/1.jpg', cat: 'Digital Literacy Workshops', label: 'Basic computer training session' },
-  { src: '/images/gallery/2.jpg', cat: 'Digital Literacy Workshops', label: 'Internet awareness workshop' },
-  { src: '/images/gallery/3.jpg', cat: 'Digital Literacy Workshops', label: 'Digital payments training' },
-  { src: '/images/gallery/4.jpg', cat: 'Rural Awareness Camps', label: 'Village outreach camp' },
-  { src: '/images/gallery/5.jpg', cat: 'Rural Awareness Camps', label: 'Cyber safety awareness drive' },
-  { src: '/images/gallery/6.jpg', cat: 'Rural Awareness Camps', label: 'Community engagement session' },
-  { src: '/images/gallery/1.jpg', cat: 'Student Training Sessions', label: 'Graphic design training' },
-  { src: '/images/gallery/2.jpg', cat: 'Student Training Sessions', label: 'AI tools workshop' },
-  { src: '/images/gallery/3.jpg', cat: 'Student Training Sessions', label: 'Video editing course' },
-  { src: '/images/gallery/4.jpg', cat: 'Women Empowerment Programs', label: 'Women digital literacy class' },
-  { src: '/images/gallery/5.jpg', cat: 'Women Empowerment Programs', label: 'Financial literacy workshop' },
-  { src: '/images/gallery/6.jpg', cat: 'Women Empowerment Programs', label: 'Entrepreneurship session' },
-  { src: '/images/gallery/1.jpg', cat: 'Community Outreach Initiatives', label: 'Smart village initiative' },
-  { src: '/images/gallery/2.jpg', cat: 'Community Outreach Initiatives', label: 'Digital Seva Kendra launch' },
-  { src: '/images/gallery/3.jpg', cat: 'Community Outreach Initiatives', label: 'Community digital center' },
-  { src: '/images/gallery/4.jpg', cat: 'Digital Literacy Workshops', label: 'E-governance awareness' },
-  { src: '/images/gallery/5.jpg', cat: 'Student Training Sessions', label: 'Freelancing workshop' },
-  { src: '/images/gallery/6.jpg', cat: 'Rural Awareness Camps', label: 'Rural tech camp' },
+  { src: '/images/gallery/1.png', cat: 'Digital Literacy Workshops', label: 'Basic computer training session' },
+  { src: '/images/gallery/2.png', cat: 'Digital Literacy Workshops', label: 'Internet awareness workshop' },
+  { src: '/images/gallery/3.png', cat: 'Digital Literacy Workshops', label: 'Digital payments training' },
+  { src: '/images/gallery/4.png', cat: 'Rural Awareness Camps', label: 'Village outreach camp' },
+  { src: '/images/gallery/5.png', cat: 'Rural Awareness Camps', label: 'Cyber safety awareness drive' },
+  { src: '/images/gallery/6.png', cat: 'Rural Awareness Camps', label: 'Community engagement session' },
+  { src: '/images/gallery/7.png', cat: 'Student Training Sessions', label: 'Graphic design training' },
+  { src: '/images/gallery/8.png', cat: 'Student Training Sessions', label: 'AI tools workshop' },
+  { src: '/images/gallery/1.png', cat: 'Student Training Sessions', label: 'Video editing course' },
+  { src: '/images/gallery/2.png', cat: 'Women Empowerment Programs', label: 'Women digital literacy class' },
+  { src: '/images/gallery/3.png', cat: 'Women Empowerment Programs', label: 'Financial literacy workshop' },
+  { src: '/images/gallery/4.png', cat: 'Women Empowerment Programs', label: 'Entrepreneurship session' },
+  { src: '/images/gallery/5.png', cat: 'Community Outreach Initiatives', label: 'Smart village initiative' },
+  { src: '/images/gallery/6.png', cat: 'Community Outreach Initiatives', label: 'Digital Seva Kendra launch' },
+  { src: '/images/gallery/7.png', cat: 'Community Outreach Initiatives', label: 'Community digital center' },
+  { src: '/images/gallery/8.png', cat: 'Digital Literacy Workshops', label: 'E-governance awareness' },
+  { src: '/images/gallery/1.png', cat: 'Student Training Sessions', label: 'Freelancing workshop' },
+  { src: '/images/gallery/2.png', cat: 'Rural Awareness Camps', label: 'Rural tech camp' },
 ];
 
 export default function Gallery() {
@@ -66,7 +66,7 @@ export default function Gallery() {
           <motion.div layout className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <AnimatePresence mode="popLayout">
               {filtered.map((photo, i) => (
-                <motion.div key={photo.src}
+                <motion.div key={i}
                   layout initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.4 }}

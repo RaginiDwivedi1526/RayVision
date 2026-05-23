@@ -7,19 +7,19 @@ import HeroBanner from '../components/HeroBanner';
 const programs = [
   { num: '1', icon: <Monitor size={26} />, title: 'Digital Literacy Programs', desc: 'We provide basic computer training, internet awareness, and digital payment education to help individuals become confident in using digital tools.',
     bullets: ['Basic Computer & Internet Training', 'Smartphone & App Usage', 'Digital Payments & Online Transactions', 'E-Governance Services Awareness'],
-    impact: { value: '2500+', label: 'Individuals Trained' }, image: 'https://picsum.photos/seed/prog1/600/400' },
+    impact: { value: '2500+', label: 'Individuals Trained' }, image: '/images/gallery/1.png' },
   { num: '2', icon: <ShieldCheck size={26} />, title: 'Cyber Safety Awareness', desc: 'Our cyber safety initiatives educate communities about online safety, cybercrime prevention, and responsible internet usage.',
     bullets: ['Online Fraud & Scam Awareness', 'Cyberbullying Prevention', 'Social Media Safety', 'Cyber Laws & Reporting Guidance'],
-    impact: { value: '120+', label: 'Awareness Workshops' }, image: 'https://picsum.photos/seed/prog2/600/400' },
+    impact: { value: '120+', label: 'Awareness Workshops' }, image: '/images/gallery/2.png' },
   { num: '3', icon: <Briefcase size={26} />, title: 'Skill Development Initiatives', desc: 'We equip youth with in-demand digital skills to enhance employability and support entrepreneurship.',
     bullets: ['Graphic Design', 'Digital Marketing', 'AI Tools & Productivity', 'Video Editing', 'Freelancing & Online Work'],
-    impact: { value: '1000+', label: 'Youth Skilled' }, image: 'https://picsum.photos/seed/prog3/600/400' },
+    impact: { value: '1000+', label: 'Youth Skilled' }, image: '/images/gallery/3.png' },
   { num: '4', icon: <Users size={26} />, title: 'Women Digital Empowerment', desc: 'We empower women with digital knowledge, financial literacy, and online earning opportunities for self-reliance.',
     bullets: ['Digital Literacy for Women', 'Online Earning Opportunities', 'Financial Literacy & Digital Banking', 'Entrepreneurship & Small Business Support'],
-    impact: { value: '800+', label: 'Women Empowered' }, image: 'https://picsum.photos/seed/prog4/600/400' },
+    impact: { value: '800+', label: 'Women Empowered' }, image: '/images/gallery/4.png' },
   { num: '5', icon: <Building2 size={26} />, title: 'Smart Village Projects', desc: 'We build technology-enabled infrastructure and digital access points to bring opportunities to rural communities.',
     bullets: ['Rural Digital Centers', 'Smart Classrooms', 'Digital Seva Kendra', 'Community Information Access'],
-    impact: { value: '50+', label: 'Rural Centers Established' }, image: 'https://picsum.photos/seed/prog5/600/400' },
+    impact: { value: '50+', label: 'Rural Centers Established' }, image: '/images/gallery/5.png' },
 ];
 
 const footerStats = [

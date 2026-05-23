@@ -29,10 +29,10 @@ const timeline = [
 ];
 
 const teamMembers = [
-  { img: 'https://picsum.photos/seed/team1/300/300', name: 'Rahul Verma', role: 'Founder & Director' },
-  { img: 'https://picsum.photos/seed/team2/300/300', name: 'Priya Singh', role: 'Program Manager' },
-  { img: 'https://picsum.photos/seed/team3/300/300', name: 'Amit Patel', role: 'Technology Lead' },
-  { img: 'https://picsum.photos/seed/team4/300/300', name: 'Sneha Gupta', role: 'Community Outreach' },
+  { img: '/images/gallery/1.png', name: 'Rahul Verma', role: 'Founder & Director' },
+  { img: '/images/gallery/2.png', name: 'Priya Singh', role: 'Program Manager' },
+  { img: '/images/gallery/3.png', name: 'Amit Patel', role: 'Technology Lead' },
+  { img: '/images/gallery/4.png', name: 'Sneha Gupta', role: 'Community Outreach' },
 ];
 
 const f = { initial: { opacity: 0, y: 30 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.6 } };
@@ -54,7 +54,7 @@ export default function About() {
               <Link to="/volunteer" className="btn btn-primary">Join Our Mission <ArrowRight size={18} /></Link>
             </motion.div>
             <motion.div {...f} transition={{ duration: 0.6, delay: 0.2 }}>
-              <img src="https://picsum.photos/seed/aboutoff/600/450" alt="RayVision office" className="rounded-2xl shadow-2xl w-full object-cover h-[400px]" />
+              <img src="/images/gallery/5.png" alt="RayVision office" className="rounded-2xl shadow-2xl w-full object-cover h-[400px]" />
             </motion.div>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function About() {
               </div>
             </div>
             <motion.div {...f} transition={{ duration: 0.6, delay: 0.3 }}>
-              <img src="https://picsum.photos/seed/training1/600/500" alt="Training session" className="rounded-2xl shadow-xl w-full object-cover h-[450px] sticky top-24" />
+              <img src="/images/gallery/6.png" alt="Training session" className="rounded-2xl shadow-xl w-full object-cover h-[450px] sticky top-24" />
             </motion.div>
           </div>
         </div>
